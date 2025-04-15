@@ -1,0 +1,205 @@
+:root {
+    --primary-color: #F5F1E3;
+    --secondary-color: #654321;
+    --accent-color: #4B371C;
+    --text-color: #2B1D0E;
+    --gold-accent: #D4AF37;
+    --light-beige: #FAF7EF;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+}
+
+.navbar {
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+.nav-link {
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+.nav-link.active {
+    color: var(--gold-accent) !important;
+}
+
+.btn-primary {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-outline-secondary {
+    color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-outline-secondary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.page-header {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 80px 0;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 50px 0 20px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--gold-accent);
+    color: var(--text-color);
+}
+
+.contact-info-card {
+    background-color: var(--light-beige);
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form {
+    background-color: var(--light-beige);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    padding: 12px;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.25rem rgba(101, 67, 33, 0.25);
+}
+
+.info-icon {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border-radius: 50%;
+    margin-right: 15px;
+    font-size: 20px;
+}
+
+.reservation-box {
+    background-color: var(--light-beige);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.map-container {
+    height: 400px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.cart-sidebar {
+    position: fixed;
+    top: 0;
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    background-color: var(--light-beige);
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1050;
+    transition: all 0.3s;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.cart-sidebar.active {
+    right: 0;
+}
+
+.cart-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1040;
+    display: none;
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 15px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.gold-text {
+    color: var(--gold-accent);
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 40px;
+    font-family: 'Playfair Display', serif;
+    color: var(--secondary-color);
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--gold-accent);
+}

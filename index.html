@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karm Al-Sham</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Karm Al-Sham</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <button class="btn" id="cart-button">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-secondary" id="cart-count">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="hero d-flex align-items-center">
+        <div class="container text-center">
+            <h1 class="display-3 fw-bold mb-4">Authentic Syrian Cuisine</h1>
+            <p class="lead mb-5">Experience the flavors of Damascus in the heart of Cairo</p>
+            <a href="menu.html" class="btn btn-primary btn-lg">View Our Menu</a>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="img/half-time-10.jpg" alt="Restaurant Interior" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Welcome to Karm Al-Sham</h2>
+                    <p class="lead">A taste of Damascus in Cairo</p>
+                    <p>Karm Al-Sham brings the rich culinary heritage of Syria to Egypt. Our restaurant offers an
+                        authentic dining experience with recipes passed down through generations, prepared with the
+                        finest ingredients and traditional cooking methods.</p>
+                    <p>Whether you're craving succulent kebabs, flavorful mezze platters, or delicate sweets, our menu
+                        delivers the true essence of Levantine cuisine.</p>
+                    <a href="about.html" class="btn btn-outline-secondary mt-3">Learn More About Us</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Our Special Dishes</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="special-dish shadow h-100">
+                        <img src="img/2819.webp" alt="Maria Mix" class="img-fluid">
+                        <div class="p-4">
+                            <h4>Shawarma</h4>
+                            <p>A selection of our finest kebabs, grilled to perfection and served with aromatic meat and
+                                grilled vegetables.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-secondary">EGP 80</span>
+                                <button class="btn btn-sm btn-primary add-to-cart" data-id="1" data-name="Maria Mix"
+                                    data-price="180" data-image="img/2819.webp">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="special-dish shadow h-100">
+                        <img src="img/delicious-floating-zinger-burger-generative-ai-design-background-instagram-facebook-wall-painting-wallpaper-art-backgrounds-324124334.webp"
+                            alt="Zinger" class="img-fluid">
+                        <div class="p-4">
+                            <h4>zinger sandwich</h4>
+                            <p>A delightful assortment of hummus, moutabal, tabbouleh, fattoush, and warm pita bread.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-secondary">EGP 120</span>
+                                <button class="btn btn-sm btn-primary add-to-cart" data-id="2" data-name="Zinger"
+                                    data-price="120"
+                                    data-image="img/delicious-floating-zinger-burger-generative-ai-design-background-instagram-facebook-wall-painting-wallpaper-art-backgrounds-324124334.webp">Add
+                                    to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="special-dish shadow h-100">
+                        <img src="img/grilled-chicken-fillets-rice-vegetables-600w-1457179505.jpg"
+                            alt="Grilled Chicken with Rice" class="img-fluid">
+                        <div class="p-4">
+                            <h4>Grilled Chicken with Rice</h4>
+                            <p>An assortment of traditional Syrian pastries, including baklava, kunafa, and maamoul.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="fw-bold text-secondary">EGP 180</span>
+                                <button class="btn btn-sm btn-primary add-to-cart" data-id="3"
+                                    data-name="Grilled Chicken with Rice" data-price="90"
+                                    data-image="img/grilled-chicken-fillets-rice-vegetables-600w-1457179505.jpg">Add to
+                                    Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center section-title">What Our Customers Say</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center h-100">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The best Syrian food I've had outside of Damascus. The kebabs were succulent and the service
+                            was exceptional."</p>
+                        <div class="mt-3">
+                            <h5 class="mb-0">Ahmed Khalil</h5>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center h-100">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"The atmosphere is so warm and inviting. The mezze platter is a must-try and their kunafa is
+                            absolutely divine!"</p>
+                        <div class="mt-3">
+                            <h5 class="mb-0">Layla Mahmoud</h5>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="testimonial-card text-center h-100">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"A hidden gem in Cairo! I've been coming here every week for their grilled chicken and
+                            hummus. It never disappoints."</p>
+                        <div class="mt-3">
+                            <h5 class="mb-0">Omar Farid</h5>
+                            <div class="text-warning">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Reserve Your Table Today</h2>
+            <p class="lead mb-4">Experience the finest Syrian cuisine in Cairo</p>
+            <a href="contact.html" class="btn btn-primary btn-lg">Make a Reservation</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="mb-4">Karm Al-Sham</h4>
+                    <p>Authentic Syrian cuisine in the heart of Cairo. Experience the flavors of Damascus with our
+                        traditional recipes and warm hospitality.</p>
+                    <div class="mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday - Thursday: 12pm - 10pm</li>
+                        <li class="mb-2">Friday - Sunday: 12pm - 11pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Al Nasr St, Cairo, Egypt</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +20 123 456 7890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@karmalshaam.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-4 border-top border-light">
+                <p class="mb-0">&copy; 2025 Karm Al-Sham. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h4 class="mb-0">Your Cart</h4>
+            <button class="btn-close" id="close-cart"></button>
+        </div>
+        <div id="cart-items">
+            <div class="text-center py-5">
+                <i class="fas fa-shopping-cart mb-3" style="font-size: 3rem; color: #ddd;"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-amount">EGP 0</span>
+        </div>
+        <a href="chekout.html">
+            <button class="btn btn-primary w-100 mt-3">Checkout</button>
+        </a>
+
+    </div>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

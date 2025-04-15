@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Karm Al-Sham</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Karm Al-Sham</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="menu.html">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <button class="btn" id="cart-button">
+                            <i class="fas fa-shopping-cart"></i>
+                            <span class="badge bg-secondary" id="cart-count">0</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Contact Us</h1>
+            <p class="lead">We'd love to hear from you</p>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="contact-info-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Our Location</h5>
+                                <p class="mb-0">Visit us today</p>
+                            </div>
+                        </div>
+                        <p>123 Al Nasr St<br>Nasr City, Cairo<br>Egypt</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-info-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="info-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Phone Number</h5>
+                                <p class="mb-0">Call us anytime</p>
+                            </div>
+                        </div>
+                        <p>Main: +20 123 456 7890<br>Reservations: +20 123 456 7891<br>Delivery: +20 123 456 7892</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="contact-info-card h-100">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h5 class="mb-1">Email Address</h5>
+                                <p class="mb-0">We'll respond quickly</p>
+                            </div>
+                        </div>
+                        <p>General Inquiries: info@karmalshaam.com<br>Reservations: book@karmalshaam.com<br>Feedback:
+                            feedback@karmalshaam.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Find Us</h2>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55251.37709803414!2d31.30419388535121!3d30.06228321970068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583fa60b21beeb%3A0x79dfb296e8423bba!2sCairo%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1712688021702!5m2!1sen!2seg"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center section-title">Send Us a Message</h2>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="name" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="subject" class="form-label">Subject</label>
+                                    <select class="form-select" id="subject">
+                                        <option value="general">General Inquiry</option>
+                                        <option value="reservation">Reservation Question</option>
+                                        <option value="feedback">Feedback</option>
+                                        <option value="catering">Catering Services</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label for="message" class="form-label">Your Message</label>
+                                    <textarea class="form-control" id="message" rows="5" required></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary px-4 py-2">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center section-title">Make a Reservation</h2>
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <div class="reservation-box">
+                        <form id="reservationForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="reservationName" class="form-label">Your Name</label>
+                                    <input type="text" class="form-control" id="reservationName" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="reservationEmail" class="form-label">Email Address</label>
+                                    <input type="email" class="form-control" id="reservationEmail" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="reservationPhone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="reservationPhone" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="guests" class="form-label">Number of Guests</label>
+                                    <select class="form-select" id="guests" required>
+                                        <option value="">Please select</option>
+                                        <option value="1">1 Guest</option>
+                                        <option value="2">2 Guests</option>
+                                        <option value="3">3 Guests</option>
+                                        <option value="4">4 Guests</option>
+                                        <option value="5">5 Guests</option>
+                                        <option value="6">6 Guests</option>
+                                        <option value="7+">7+ Guests</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="reservationDate" class="form-label">Date</label>
+                                    <input type="date" class="form-control" id="reservationDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="reservationTime" class="form-label">Time</label>
+                                    <input type="time" class="form-control" id="reservationTime" required>
+                                </div>
+                                <div class="col-12">
+                                    <label for="specialRequests" class="form-label">Special Requests</label>
+                                    <textarea class="form-control" id="specialRequests" rows="3"></textarea>
+                                </div>
+                                <div class="col-12 text-center">
+                                    <button type="submit" class="btn btn-primary px-4 py-2">Reserve Table</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <img src="img/half-time-10.jpg" alt="Restaurant Interior" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-lg-7">
+                    <h2 class="mb-4">Opening Hours</h2>
+                    <div class="p-4 bg-light rounded shadow">
+                        <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                            <span class="fw-bold">Monday - Thursday</span>
+                            <span>12:00 PM - 10:00 PM</span>
+                        </div>
+                        <div class="d-flex justify-content-between border-bottom pb-2 mb-2">
+                            <span class="fw-bold">Friday - Sunday</span>
+                            <span>12:00 PM - 11:00 PM</span>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <p class="mb-0"><small>* Kitchen closes 30 minutes before closing time</small></p>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <p class="gold-text fw-bold">Special Events & Private Dining</p>
+                        <p>Looking to host a special event or private gathering? Contact our events team for inquiries
+                            about private dining options and custom catering packages.</p>
+                        <p><strong>Events Coordinator:</strong> events@karmalshaam.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h4 class="mb-4">Karm Al-Sham</h4>
+                    <p>Authentic Syrian cuisine in the heart of Cairo. Experience the flavors of Damascus with our
+                        traditional recipes and warm hospitality.</p>
+                    <div class="mt-3">
+                        <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0">
+                    <h5 class="mb-4">Opening Hours</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">Monday - Thursday: 12pm - 10pm</li>
+                        <li class="mb-2">Friday - Sunday: 12pm - 11pm</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-4">Contact Us</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i> 123 Al Nasr St, Cairo, Egypt</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i> +20 123 456 7890</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i> info@karmalshaam.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="text-center mt-4 pt-4 border-top border-light">
+                <p class="mb-0">&copy; 2025 Karm Al-Sham. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h4 class="mb-0">Your Cart</h4>
+            <button class="btn-close" id="close-cart"></button>
+        </div>
+        <div id="cart-items">
+            <div class="text-center py-5">
+                <i class="fas fa-shopping-cart mb-3" style="font-size: 3rem; color: #ddd;"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cart-total-amount">EGP 0</span>
+        </div>
+        <a href="chekout.html">
+            <button class="btn btn-primary w-100 mt-3">Checkout</button>
+        </a>
+    </div>
+
+    <div class="cart-overlay" id="cart-overlay"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+</html>
